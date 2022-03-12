@@ -24,7 +24,9 @@
   - **The inut data has 43 features and 25,724 samples.** 
   - **The output layer is made ofa unique neuron as it is a binary classification.**
 
-- 
+- **To speed up the training process, using the activation function `Linear` for the hidden layers. As the output is a binary clssification, `Sigmoid` is used on the output layer.** 
+
+- **For the compliationm the optimizer is `adam` and the loss function is `binary_crossebtropy`.**
 
 
 
