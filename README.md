@@ -24,11 +24,21 @@
   - **The inut data has 43 features and 25,724 samples.** 
   - **The output layer is made ofa unique neuron as it is a binary classification.**
 
-- **To speed up the training process, using the activation function `Linear` for the hidden layers. As the output is a binary clssification, `Sigmoid` is used on the output layer.** 
+- **To speed up the training process, using the activation function `ReLu` for the hidden layers. As the output is a binary clssification, `Sigmoid` is used on the output layer.** 
 
-- **For the compliationm the optimizer is `adam` and the loss function is `binary_crossebtropy`.**
+- **For the compilation, the optimizer is `adam` and the loss function is `binary_crossebtropy`.**
+
+- **The model accuracy is under 75%. This is not a satisfying performance to help predict the outcome of the charityy donations.**
+
+- **To increase the performance of the model, applying bucketing to the feature `ASK_AMT` and organizing different values by intervals might change the optimization of the model.** 
+
+    - **Increasing the number of neurons on one of the hidden layers, then using a different approach by adding another hidden layer in total of three hidden layers.**
+    - **Also using a different activtion function (`Linear`). Applying these features did not allow the deep neural network to go above 75% satisfactory.** 
 
 
+## Summary
+
+**Through the process of removing the noisy features, adding additional neurons and hidden layers and changing the activations function the accuracy of the optimized model for predicting whether a donation is successful ended up beig 72% and with a loss metric of 0.58. A reccomended approach would be to use a Random Forest model to help solve this classification problem by randomly sampling the preprocessed data and building several smaller decison trees that will generate a classified output and also, elvaluate its performance against the deep learning model.**
 
 
 ## Resources
